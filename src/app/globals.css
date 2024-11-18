@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  input[type='number']::-webkit-inner-spin-button,
+  input[type='number']::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+}
+
+/* width */
+.dashboard-sidebar ::-webkit-scrollbar {
+  width: 2px;
+}
+
+/* Track */
+.dashboard-sidebar ::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+/* Handle */
+.dashboard-sidebar ::-webkit-scrollbar-thumb {
+  background: white;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+.dashboard-sidebar ::-webkit-scrollbar-thumb:hover {
+  background: black;
+}
+
+.hide-sidebar-link {
+  pointer-events: none;
+}
+/* #video_outer {
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+  background: white;
+}
+.video {
+  position: relative;
+  left: 0;
+  top: 0;
+  opacity: 1;
+} */
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
